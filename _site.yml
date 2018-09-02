@@ -1,0 +1,8 @@
+name: "personal-website"
+navbar:
+  title: "HONGKE"
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "About"
+      href: about.html
