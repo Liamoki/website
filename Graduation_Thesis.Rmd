@@ -1,0 +1,7 @@
+---
+title: "Graduation thesis"
+---
+
+I take some notes, hope it will be useful
+
+### [Chromosome Conformation Capture](Chromosome Conformation Capture.html)

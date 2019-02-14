@@ -1,0 +1,14 @@
+---
+title: "Project"
+---
+I am a undergraduate student major in Biology. This website is used for a personal science notebook and to share my ideas with the world. Here's my projects. 
+
+## [Graduation thesis](Graduation_Thesis.html)
+
+- This is my last year in Nanjing University, a thesis is needed for a bachelor degree
+- a project about Pcdh genes and 3D loop of chromosome.
+
+## [KILL TEOFL](KILL-TEOFL.html)
+
+- I went through TPOs and took some notes
+- Hope it's helpful

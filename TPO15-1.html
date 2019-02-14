@@ -1,0 +1,877 @@
+<!DOCTYPE html><html>
+
+<head>
+<meta charset="utf-8">
+<title># TPO15-1</title>
+<style>
+@font-face {
+  font-family: octicons-anchor;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+body {
+  background-color: white;
+}
+
+.markdown-body {
+  min-width: 200px;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 20px;
+
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  color: #333;
+  overflow: hidden;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+.markdown-body a {
+  background: transparent;;word-wrap: break-word; word-break: break-all;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline: 0;
+}
+
+.markdown-body strong {
+  font-weight: bold;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.markdown-body img {
+  border: 0;
+}
+
+.markdown-body hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+.markdown-body pre {
+  overflow: auto;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+.markdown-body input {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body html input[disabled] {
+  cursor: default;
+}
+
+.markdown-body input {
+  line-height: normal;
+}
+
+.markdown-body input[type="checkbox"] {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body * {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font: 13px/1.4 Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.markdown-body a {
+  color: #4183c4;
+  text-decoration: none;
+}
+
+.markdown-body a:hover,
+.markdown-body a:focus,
+.markdown-body a:active {
+  text-decoration: underline;
+}
+
+.markdown-body hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.markdown-body hr:before {
+  display: table;
+  content: "";
+}
+
+.markdown-body hr:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 1.1;
+}
+
+.markdown-body h1 {
+  font-size: 30px;
+}
+
+.markdown-body h2 {
+  font-size: 21px;
+}
+
+.markdown-body h3 {
+  font-size: 16px;
+}
+
+.markdown-body h4 {
+  font-size: 14px;
+}
+
+.markdown-body h5 {
+  font-size: 12px;
+}
+
+.markdown-body h6 {
+  font-size: 11px;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code {
+  font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+  font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+.markdown-body kbd {
+  background-color: #e7e7e7;
+  background-image: -webkit-linear-gradient(#fefefe, #e7e7e7);
+  background-image: linear-gradient(#fefefe, #e7e7e7);
+  background-repeat: repeat-x;
+  border-radius: 2px;
+  border: 1px solid #cfcfcf;
+  color: #000;
+  padding: 3px 5px;
+  line-height: 10px;
+  font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  display: inline-block;
+}
+
+.markdown-body>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+.markdown-body .anchor {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  padding-right: 6px;
+  padding-left: 30px;
+  margin-left: -30px;
+}
+
+.markdown-body .anchor:focus {
+  outline: none;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  position: relative;
+  margin-top: 1em;
+  margin-bottom: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+  display: none;
+  color: #000;
+  vertical-align: middle;
+}
+
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+  height: 1em;
+  padding-left: 8px;
+  margin-left: -30px;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
+  display: inline-block;
+}
+
+.markdown-body h1 {
+  padding-bottom: 0.3em;
+  font-size: 2.25em;
+  line-height: 1.2;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+
+.markdown-body h4 {
+  font-size: 1.25em;
+}
+
+.markdown-body h5 {
+  font-size: 1em;
+}
+
+.markdown-body h6 {
+  font-size: 1em;
+  color: #777;
+}
+
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.markdown-body hr {
+  height: 4px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 2em;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.markdown-body blockquote {
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+}
+
+.markdown-body table th {
+  font-weight: bold;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body code {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px;
+}
+
+.markdown-body code:before,
+.markdown-body code:after {
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.markdown-body .highlight {
+  margin-bottom: 16px;
+}
+
+.markdown-body .highlight pre,
+.markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+
+.markdown-body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre code {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+.markdown-body pre code:before,
+.markdown-body pre code:after {
+  content: normal;
+}
+
+.markdown-body .highlight {
+  background: #fff;
+}
+
+.markdown-body .highlight .mf,
+.markdown-body .highlight .mh,
+.markdown-body .highlight .mi,
+.markdown-body .highlight .mo,
+.markdown-body .highlight .il,
+.markdown-body .highlight .m {
+  color: #945277;
+}
+
+.markdown-body .highlight .s,
+.markdown-body .highlight .sb,
+.markdown-body .highlight .sc,
+.markdown-body .highlight .sd,
+.markdown-body .highlight .s2,
+.markdown-body .highlight .se,
+.markdown-body .highlight .sh,
+.markdown-body .highlight .si,
+.markdown-body .highlight .sx,
+.markdown-body .highlight .s1 {
+  color: #df5000;
+}
+
+.markdown-body .highlight .kc,
+.markdown-body .highlight .kd,
+.markdown-body .highlight .kn,
+.markdown-body .highlight .kp,
+.markdown-body .highlight .kr,
+.markdown-body .highlight .kt,
+.markdown-body .highlight .k,
+.markdown-body .highlight .o {
+  font-weight: bold;
+}
+
+.markdown-body .highlight .kt {
+  color: #458;
+}
+
+.markdown-body .highlight .c,
+.markdown-body .highlight .cm,
+.markdown-body .highlight .c1 {
+  color: #998;
+  font-style: italic;
+}
+
+.markdown-body .highlight .cp,
+.markdown-body .highlight .cs {
+  color: #999;
+  font-weight: bold;
+}
+
+.markdown-body .highlight .cs {
+  font-style: italic;
+}
+
+.markdown-body .highlight .n {
+  color: #333;
+}
+
+.markdown-body .highlight .na,
+.markdown-body .highlight .nv,
+.markdown-body .highlight .vc,
+.markdown-body .highlight .vg,
+.markdown-body .highlight .vi {
+  color: #008080;
+}
+
+.markdown-body .highlight .nb {
+  color: #0086B3;
+}
+
+.markdown-body .highlight .nc {
+  color: #458;
+  font-weight: bold;
+}
+
+.markdown-body .highlight .no {
+  color: #094e99;
+}
+
+.markdown-body .highlight .ni {
+  color: #800080;
+}
+
+.markdown-body .highlight .ne {
+  color: #990000;
+  font-weight: bold;
+}
+
+.markdown-body .highlight .nf {
+  color: #945277;
+  font-weight: bold;
+}
+
+.markdown-body .highlight .nn {
+  color: #555;
+}
+
+.markdown-body .highlight .nt {
+  color: #000080;
+}
+
+.markdown-body .highlight .err {
+  color: #a61717;
+  background-color: #e3d2d2;
+}
+
+.markdown-body .highlight .gd {
+  color: #000;
+  background-color: #fdd;
+}
+
+.markdown-body .highlight .gd .x {
+  color: #000;
+  background-color: #faa;
+}
+
+.markdown-body .highlight .ge {
+  font-style: italic;
+}
+
+.markdown-body .highlight .gr {
+  color: #aa0000;
+}
+
+.markdown-body .highlight .gh {
+  color: #999;
+}
+
+.markdown-body .highlight .gi {
+  color: #000;
+  background-color: #dfd;
+}
+
+.markdown-body .highlight .gi .x {
+  color: #000;
+  background-color: #afa;
+}
+
+.markdown-body .highlight .go {
+  color: #888;
+}
+
+.markdown-body .highlight .gp {
+  color: #555;
+}
+
+.markdown-body .highlight .gs {
+  font-weight: bold;
+}
+
+.markdown-body .highlight .gu {
+  color: #800080;
+  font-weight: bold;
+}
+
+.markdown-body .highlight .gt {
+  color: #aa0000;
+}
+
+.markdown-body .highlight .ow {
+  font-weight: bold;
+}
+
+.markdown-body .highlight .w {
+  color: #bbb;
+}
+
+.markdown-body .highlight .sr {
+  color: #017936;
+}
+
+.markdown-body .highlight .ss {
+  color: #8b467f;
+}
+
+.markdown-body .highlight .bp {
+  color: #999;
+}
+
+.markdown-body .highlight .gc {
+  color: #999;
+  background-color: #EAF2F5;
+}
+
+.markdown-body .octicon {
+  font: normal normal 16px octicons-anchor;
+  line-height: 1;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.markdown-body .octicon-link:before {
+  content: '\f05c';
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  float: left;
+  margin: 0.3em 0 0.25em -1.6em;
+  vertical-align: middle;
+}
+table td{ word-wrap: break-word !important; word-break: break-all !important; }
+/*
+
+github.com style (c) Vasily Polovnyov <vast@whiteants.net>
+
+*/
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  color: #333;
+  background: #f8f8f8;
+  -webkit-text-size-adjust: none;
+}
+
+.hljs-comment,
+.diff .hljs-header {
+  color: #998;
+  font-style: italic;
+}
+
+.hljs-keyword,
+.css .rule .hljs-keyword,
+.hljs-winutils,
+.nginx .hljs-title,
+.hljs-subst,
+.hljs-request,
+.hljs-status {
+  color: #333;
+  font-weight: bold;
+}
+
+.hljs-number,
+.hljs-hexcolor,
+.ruby .hljs-constant {
+  color: #008080;
+}
+
+.hljs-string,
+.hljs-tag .hljs-value,
+.hljs-doctag,
+.tex .hljs-formula {
+  color: #d14;
+}
+
+.hljs-title,
+.hljs-id,
+.scss .hljs-preprocessor {
+  color: #900;
+  font-weight: bold;
+}
+
+.hljs-list .hljs-keyword,
+.hljs-subst {
+  font-weight: normal;
+}
+
+.hljs-class .hljs-title,
+.hljs-type,
+.vhdl .hljs-literal,
+.tex .hljs-command {
+  color: #458;
+  font-weight: bold;
+}
+
+.hljs-tag,
+.hljs-tag .hljs-title,
+.hljs-rule .hljs-property,
+.django .hljs-tag .hljs-keyword {
+  color: #000080;
+  font-weight: normal;
+}
+
+.hljs-attribute,
+.hljs-variable,
+.lisp .hljs-body,
+.hljs-name {
+  color: #008080;
+}
+
+.hljs-regexp {
+  color: #009926;
+}
+
+.hljs-symbol,
+.ruby .hljs-symbol .hljs-string,
+.lisp .hljs-keyword,
+.clojure .hljs-keyword,
+.scheme .hljs-keyword,
+.tex .hljs-special,
+.hljs-prompt {
+  color: #990073;
+}
+
+.hljs-built_in {
+  color: #0086b3;
+}
+
+.hljs-preprocessor,
+.hljs-pragma,
+.hljs-pi,
+.hljs-doctype,
+.hljs-shebang,
+.hljs-cdata {
+  color: #999;
+  font-weight: bold;
+}
+
+.hljs-deletion {
+  background: #fdd;
+}
+
+.hljs-addition {
+  background: #dfd;
+}
+
+.diff .hljs-change {
+  background: #0086b3;
+}
+
+.hljs-chunk {
+  color: #aaa;
+}
+
+
+</style>
+
+<style> @media print{ .hljs{overflow: visible; word-wrap: break-word !important;} }</style></head><body><div class="markdown-body">
+<h1 id="toc_0">TPO15-1</h1>
+
+<p>第一段</p>
+
+<blockquote>
+<p>When it comes to physiology, the leatherback turtle is, in some ways, more like a reptilian whale than a turtle. It swims farther into the cold of the northern and southern oceans than any other sea turtle, <u><strong>and</strong></u> it deals with the chilly waters in a way unique among reptiles.</p>
+</blockquote>
+
+<p>第一句：比起其他的海龟，leatherback turtle更像是reptilian whale。<br/>
+第二句：与其他海龟的习性的不同 + and + 与reptiles的习性的不同。 <strong>因为and表承接，而非转折。</strong></p>
+
+<p>第三段</p>
+
+<blockquote>
+<p>Leatherbacks keep their body heat in three different ways. The first, and simplest, is size. The bigger the animal is, the lower its surface-to-volume ratio; for every ounce of body <strong>mass</strong>, there is proportionately less surface through which heat can escape. An adult leatherback is twice the size of the biggest cheloniid sea turtles and will therefore take longer to cool off. <u>Maintaining a high body temperature through sheer <strong>bulk</strong> is called gigantothermy.</u> It works for elephants, for whales, and, perhaps, it worked for many of the larger dinosaurs. It apparently works, in a smaller way, for some other sea turtles. Large loggerhead and green turtles can maintain their body temperature at a degree or two above that of the surrounding water, and gigantothermy is probably the way they do it. Muscular activity helps, too, and an actively swimming green turtle may be 7°C 12.6°F warmer than the waters it swims through.</p>
+</blockquote>
+
+<p>段落结构分析：<br/>
+第一句Leatherbacks keep their body heat in <strong>three different ways.</strong>统领接下来的三个段落，而只一段其实都是在the first —— size，与surface-to-volume ratio，body mass等相关，故此可以猜测bulk等意思。</p>
+
+<h2 id="toc_1">全文结构</h2>
+
+<p>When it comes to physiology, the leatherback turtle is, in some ways, more like a reptilian whale than a turtle. It swims farther into the cold of the northern and southern oceans than any other sea turtle, and it deals with the chilly waters in a way unique among reptiles.</p>
+
+<p><strong>【什么是warm-blood海龟，它的体现是什么】</strong>A warm-blooded turtle may seem to be a contradiction in terms. Nonetheless, an adult leatherback can maintain a body temperature of between 25 and 26°C 77–79°F in seawater that is only 8°C 46.4°F. Accomplishing this feat requires adaptations both to generate heat in the turtle&#39;s body and to keep it from escaping into the surrounding waters.<strong>【这种海龟如何产生热量】</strong> Leatherbacks apparently <u>do not</u> generate internal heat the way we do, or the way birds do, as a by-product of cellular metabolism. A leatherback may be able to pick up some body heat by basking at the surface; its dark, almost black body color may help it to absorb solar radiation. However, <u>most</u> of its internal heat comes from the action of its muscles.注意否定词和最高级</p>
+
+<p>【这一句话统领接下来的段落】 <u><strong>Leatherbacks keep their body heat in three different ways.</strong></u> 【第二句统领此段】 <u><strong>The first, and simplest, is size.</strong></u> The bigger the animal is, the lower its <u>surface-to-volume ratio</u>; for every ounce of <u>body mass</u>, there is proportionately less surface through which heat can escape. An adult leatherback is twice the size of the biggest cheloniid sea turtles and will therefore take longer to cool off. Maintaining a high body temperature through sheer bulk is called gigantothermy. 【举一些其他动物的例子】It works for elephants, for whales, and, perhaps, it worked for many of the larger dinosaurs. It apparently works, in a smaller way, for some other sea turtles. Large loggerhead and green turtles can maintain their body temperature at a degree or two above that of the surrounding water, and gigantothermy is probably the way they do it. Muscular activity helps, too, and an actively swimming green turtle may be 7°C 12.6°F warmer than the waters it swims through.</p>
+
+<p>【承接上文，注意否定，暗示要开始讲述第二种方法了】 <u>Gigantothermy, <strong>though, would not be enough</strong> to keep a leatherback warm in cold northern waters.</u> It is not enough for whales, which supplement it with a thick layer of insulating blubber fat. 【介绍第二种保护措施，这里只很小的提及了第二种方式】 <u>Leatherbacks do not have blubber, but they do have a reptilian equivalent: thick, oil-saturated skin, with a layer of fibrous, fatty tissue just beneath it.</u> <u><strong>【但是第二种方式无法保护这种海龟的头部和鳍——直接开始引入第三种保护方式,一直到结尾段都是在描述countercurrent exchange system】</strong></u> Insulation protects the leatherback everywhere but on its head and flippers. Because the flippers are comparatively thin and blade like, they are the one part of the leatherback that is likely to become chilled. There is not much that the turtle can do about this without compromising the aerodynamic shape of the flipper. The problem is that as blood flows through the turtle&#39;s flippers, it risks losing enough heat to lower the animal&#39;s central body temperature when it returns. The solution is to allow the flippers to cool down without drawing heat away from the rest of the turtle&#39;s body. The leatherback accomplishes this by arranging the blood vessels in the base of its flipper into a <u><strong>countercurrent exchange system.</strong></u></p>
+
+<p>【详细介绍countercurrent exchange system】In a countercurrent exchange system, the blood vessels carrying cooled blood from the flippers run close enough to the blood vessels carrying warm blood from the body to pick up some heat from the warmer blood vessels; <u><strong>【heat, outgoing -&gt; ingoing】</strong></u> thus, the heat is transferred from the <u>outgoing</u> to the <u>ingoing</u> vessels before it reaches the flipper itself. 【举例来进一步类比这种系统】This is the same arrangement found in an old-fashioned steam radiator, in which the coiled pipes pass heat back and forth as water courses through them. The leatherback is certainly not the only animal with such an arrangement; gulls have a countercurrent exchange in their legs. That is why a gull can stand on an ice floe without freezing.</p>
+
+<p>All this applies, of course, only to an adult leatherback. <u>【开始描述小海龟，他们也拥有countercurrent exchange system，是无法恒温】</u> Hatchlings are simply too small to conserve body heat, even with insulation and countercurrent exchange systems. We do not know how old, or how large, a leatherback has to be before it can switch from a cold-blooded to a warm-blooded mode of life. Leatherbacks reach their immense size in a much shorter time than it takes other sea turtles to grow. Perhaps their rush to adulthood is driven by a simple need to keep warm.</p>
+
+</div></body>
+
+</html>
