@@ -2,6 +2,16 @@
 title: "Graduation thesis"
 ---
 
-I take some notes, hope it will be useful
+I take some notes while I am doing the project. Hope it will be useful
 
 ### [Chromosome Conformation Capture](Chromosome Conformation Capture.html)
+
+- New techs to detect DNA loop and 3D construction
+- Enhancers can facilitate/decrease the treanscriptional process by remotely contact to gene promoters.
+- These methods will be useful in the graduation thesis
+
+### [How to download sra files](How to Download SRA files.html)
+
+- How to install toolkit in a linux system
+- How to find the SRA IDs 
+- Single file downloading vs. bulk downloading
